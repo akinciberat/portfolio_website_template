@@ -246,7 +246,7 @@ const PORT = 3000; // İstediğiniz portu yazın
 
 ## 👤 İletişim
 
-- **E-posta**: hello@beratakinci.com
+- **E-posta**: akinciberat288@gmail.com
 - **Konum**: İstanbul, Türkiye
 - **GitHub**: [Profiliniz]
 - **LinkedIn**: [Profiliniz]

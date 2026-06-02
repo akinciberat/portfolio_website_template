@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Portfolio Yönetimi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Login Screen -->
+    <div class="login-screen" id="loginScreen">
+        <div class="login-card">
+            <div class="login-logo">BA<span>.</span></div>
+            <h2>Admin Girişi</h2>
+            <p class="login-subtitle">Portfolio yönetim paneline hoş geldiniz</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Kullanıcı Adı</label>
+                    <input type="text" id="loginUser" value="admin" required>
+                </div>
+                <div class="input-group">
+                    <label>Şifre</label>
+                    <input type="password" id="loginPass" required>
+                </div>
+                <div class="login-error" id="loginError"></div>
+                <button type="submit" class="btn-save">Giriş Yap</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard" id="dashboard" style="display:none;">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">BA<span>.</span> <small>Admin</small></div>
+            <nav class="sidebar-nav">
+                <button class="nav-btn active" data-tab="hero">🏠 Hero</button>
+                <button class="nav-btn" data-tab="about">👤 Hakkımda</button>
+                <button class="nav-btn" data-tab="experience">💼 Tecrübe</button>
+                <button class="nav-btn" data-tab="projects">📁 Projeler</button>
+                <button class="nav-btn" data-tab="skills">⚡ Yetenekler</button>
+                <button class="nav-btn" data-tab="contact">✉️ İletişim</button>
+                <button class="nav-btn" data-tab="settings">⚙️ Ayarlar</button>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="/" target="_blank" class="btn-view">🔗 Siteyi Görüntüle</a>
+                <button class="btn-logout" id="logoutBtn">Çıkış Yap</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="topbar">
+                <h1 id="pageTitle">Hero Bölümü</h1>
+                <div class="topbar-actions">
+                    <span class="save-status" id="saveStatus"></span>
+                    <button class="btn-save" id="saveBtn">💾 Kaydet</button>
+                </div>
+            </div>
+
+            <div class="content-area" id="contentArea">
+                <!-- Tabs rendered by JS -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+{
+  "siteSettings": {
+    "title": "Berat Akıncı | Yaratıcı Tasarımcı & Developer",
+    "description": "Dijital dünyada etkileyici deneyimler tasarlayan yaratıcı tasarımcı ve developer portfolyosu.",
+    "keywords": "tasarım, developer, portfolio, UI/UX, grafik tasarım"
+  },
+  "hero": {
+    "label": "Grafik Tasarımcı & Vibe Coder",
+    "firstName": "Berat",
+    "lastName": "Akıncı",
+    "description": "Dijital dünyada etkileyici ve yenilikçi deneyimler tasarlıyorum.\nYaratıcılık ve teknolojiyi birleştirerek markaları geleceğe taşıyorum.",
+    "btnPrimary": "Projelerimi İncele",
+    "btnSecondary": "İletişime Geç"
+  },
+  "about": {
+    "tag": "01 / Hakkımda",
+    "title": "Ben Kimim?",
+    "lead": "Merhaba! Ben Berat — dijital dünyada yaratıcılığı ve teknolojiyi harmanlayan bir tasarımcı ve geliştiriciyim.",
+    "paragraphs": [
+      "Yılların getirdiği deneyimle; web tasarımı, grafik tasarım, motion graphics ve frontend geliştirme alanlarında projeler üretiyorum. Her projede estetik ve işlevselliği bir arada sunmayı hedefliyorum.",
+      "Adobe Photoshop, After Effects, CorelDRAW gibi güçlü araçlarla görsel dünyalar yaratırken, HTML ve CSS ile bu tasarımları hayata geçiriyorum."
+    ],
+    "stats": [
+      {
+        "number": 5,
+        "suffix": "+",
+        "label": "Yıllık Deneyim"
+      },
+      {
+        "number": 50,
+        "suffix": "+",
+        "label": "Tamamlanan Proje"
+      },
+      {
+        "number": 30,
+        "suffix": "+",
+        "label": "Mutlu Müşteri"
+      }
+    ]
+  },
+  "experience": {
+    "tag": "02 / Tecrübe",
+    "title": "İş Deneyimlerim.",
+    "items": [
+      {
+        "date": "2023 — Günümüz",
+        "role": "Senior UI/UX Tasarımcı",
+        "company": "Dijital Ajans",
+        "description": "Büyük ölçekli web ve mobil projeler için kullanıcı deneyimi ve arayüz tasarımı. Marka stratejileri ve tasarım sistemleri oluşturma."
+      },
+      {
+        "date": "2021 — 2023",
+        "role": "Frontend Geliştirici",
+        "company": "Teknoloji Şirketi",
+        "description": "Modern web teknolojileri ile interaktif ve performanslı arayüzler geliştirme. Responsive ve erişilebilir web çözümleri üretme."
+      },
+      {
+        "date": "2019 — 2021",
+        "role": "Grafik Tasarımcı",
+        "company": "Kreatif Stüdyo",
+        "description": "Marka kimliği, baskı tasarımı ve dijital medya içerik üretimi. Sosyal medya kampanyaları ve video prodüksiyon desteği."
+      }
+    ]
+  },
+  "projects": {
+    "tag": "03 / Projeler",
+    "title": "Seçili Çalışmalarım.",
+    "items": [
+      {
+        "title": "Nexus Platform",
+        "category": "UI/UX Tasarım",
+        "shortDesc": "E-ticaret platformu için kapsamlı kullanıcı deneyimi tasarımı",
+        "description": "Bu proje, bir e-ticaret platformunun sıfırdan tasarlanmasını kapsamaktadır. Kullanıcı araştırması ile başlayan süreç, persona oluşturma, kullanıcı yolculuğu haritaları, wireframe tasarımları ve yüksek çözünürlüklü prototiplerle devam etmiştir.\n\nTasarım sürecinde modern UI trendleri, erişilebilirlik standartları ve dönüşüm optimizasyonu prensipleri göz önünde bulundurulmuştur.",
+        "detailContent": "Bu proje, bir e-ticaret platformunun sıfırdan tasarlanmasını kapsamaktadır. Kullanıcı araştırması ile başlayan süreç, persona oluşturma, kullanıcı yolculuğu haritaları, wireframe tasarımları ve yüksek çözünürlüklü prototiplerle devam etmiştir.\n\nTasarım sürecinde modern UI trendleri, erişilebilirlik standartları ve dönüşüm optimizasyonu prensipleri göz önünde bulundurulmuştur.",
+        "gradientColors": [
+          "#ff0000",
+          "#22426d"
+        ],
+        "image": "",
+        "detailImages": [],
+        "tech": [
+          "Figma",
+          "Photoshop",
+          "Illustrator",
+          "Prototyping"
+        ],
+        "link": ""
+      },
+      {
+        "title": "Aurora Dashboard",
+        "category": "Web Geliştirme",
+        "shortDesc": "Gerçek zamanlı veri görselleştirme panosu",
+        "description": "Aurora Dashboard, kurumsal müşteriler için geliştirilmiş bir veri analitik platformudur. Gerçek zamanlı veri akışı, interaktif grafikler ve özelleştirilebilir widget sistemi ile kullanıcılara güçlü bir analiz deneyimi sunmaktadır.\n\nProje, performans odaklı frontend mimarisi ve responsive tasarım ile her cihazda kusursuz çalışmaktadır.",
+        "detailContent": "Aurora Dashboard, kurumsal müşteriler için geliştirilmiş bir veri analitik platformudur. Gerçek zamanlı veri akışı, interaktif grafikler ve özelleştirilebilir widget sistemi ile kullanıcılara güçlü bir analiz deneyimi sunmaktadır.\n\nProje, performans odaklı frontend mimarisi ve responsive tasarım ile her cihazda kusursuz çalışmaktadır.",
+        "gradientColors": [
+          "#0a0a2e",
+          "#1a1a4e",
+          "#003040"
+        ],
+        "image": "",
+        "detailImages": [],
+        "tech": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Chart.js"
+        ],
+        "link": ""
+      },
+      {
+        "title": "Pulse Branding",
+        "category": "Marka Kimliği",
+        "shortDesc": "Teknoloji markası için komple kimlik tasarımı",
+        "description": "Pulse markası için sıfırdan oluşturulan kurumsal kimlik projesi. Logo tasarımından başlayarak renk paleti, tipografi seçimi, kartvizit, antetli kağıt, zarf tasarımı ve dijital medya kiti hazırlanmıştır.\n\nMarka stratejisi, hedef kitle analizi ve rakip araştırması ile desteklenen bu proje, markanın dijital ve fiziksel tüm temas noktalarında tutarlı bir görünüm sağlamaktadır.",
+        "detailContent": "Pulse markası için sıfırdan oluşturulan kurumsal kimlik projesi. Logo tasarımından başlayarak renk paleti, tipografi seçimi, kartvizit, antetli kağıt, zarf tasarımı ve dijital medya kiti hazırlanmıştır.\n\nMarka stratejisi, hedef kitle analizi ve rakip araştırması ile desteklenen bu proje, markanın dijital ve fiziksel tüm temas noktalarında tutarlı bir görünüm sağlamaktadır.",
+        "gradientColors": [
+          "#1a002e",
+          "#4a0072",
+          "#2a0040"
+        ],
+        "image": "",
+        "detailImages": [],
+        "tech": [
+          "Photoshop",
+          "CorelDRAW",
+          "After Effects"
+        ],
+        "link": ""
+      },
+      {
+        "title": "Vertex Motion",
+        "category": "Motion Graphics",
+        "shortDesc": "Sinematik motion graphics ve video prodüksiyon",
+        "description": "Vertex Motion projesi, çeşitli markalar için üretilen sinematik motion graphics ve video prodüksiyon çalışmalarını kapsamaktadır. Marka tanıtım videoları, sosyal medya reklamları ve etkileyici intro animasyonları bu projenin ana çıktılarıdır.\n\nHer bir video, hikaye anlatımı, renk grading ve ses tasarımı ile profesyonel bir prodüksiyon sürecinden geçmiştir.",
+        "detailContent": "Vertex Motion projesi, çeşitli markalar için üretilen sinematik motion graphics ve video prodüksiyon çalışmalarını kapsamaktadır. Marka tanıtım videoları, sosyal medya reklamları ve etkileyici intro animasyonları bu projenin ana çıktılarıdır.\n\nHer bir video, hikaye anlatımı, renk grading ve ses tasarımı ile profesyonel bir prodüksiyon sürecinden geçmiştir.",
+        "gradientColors": [
+          "#002a1a",
+          "#004d3a",
+          "#003030"
+        ],
+        "image": "/uploads/1778664405613-xat94r.png",
+        "detailImages": [],
+        "tech": [
+          "After Effects",
+          "Photoshop",
+          "Premiere Pro"
+        ],
+        "link": ""
+      }
+    ]
+  },
+  "skills": {
+    "tag": "04 / Yetenekler",
+    "title": "Uzmanlık Alanlarım.",
+    "items": [
+      {
+        "name": "Adobe Photoshop",
+        "icon": "Ps",
+        "gradientColors": [
+          "#cb5252",
+          "#ffffff"
+        ],
+        "level": 95,
+        "levelText": "İleri Seviye"
+      },
+      {
+        "name": "Adobe After Effects",
+        "icon": "Ae",
+        "gradientColors": [
+          "#9999ff",
+          "#00005b"
+        ],
+        "level": 90,
+        "levelText": "İleri Seviye"
+      },
+      {
+        "name": "CorelDRAW",
+        "icon": "Cd",
+        "gradientColors": [
+          "#6abe45",
+          "#003d00"
+        ],
+        "level": 85,
+        "levelText": "İleri Seviye"
+      },
+      {
+        "name": "HTML",
+        "icon": "</>",
+        "gradientColors": [
+          "#e44d26",
+          "#3d0000"
+        ],
+        "level": 92,
+        "levelText": "İleri Seviye"
+      },
+      {
+        "name": "CSS",
+        "icon": "{ }",
+        "gradientColors": [
+          "#264de4",
+          "#00003d"
+        ],
+        "level": 90,
+        "levelText": "İleri Seviye"
+      }
+    ]
+  },
+  "contact": {
+    "tag": "05 / İletişim",
+    "title": "Birlikte Çalışalım.",
+    "lead": "Projeniz için benimle iletişime geçin. Birlikte harika işler çıkarabiliriz.",
+    "email": "hello@beratakinci.com",
+    "location": "İstanbul, Türkiye",
+    "socials": {
+      "github": "#",
+      "linkedin": "#",
+      "twitter": "#",
+      "instagram": "#"
+    }
+  },
+  "footer": {
+    "text": "© 2025 Berat Akıncı. Tüm hakları saklıdır."
+  }
+}

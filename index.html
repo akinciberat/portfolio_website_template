@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berat Akıncı | Yaratıcı Tasarımcı & Developer</title>
+    <meta name="description"
+        content="Dijital dünyada etkileyici deneyimler tasarlayan yaratıcı tasarımcı ve developer portfolyosu.">
+    <meta name="keywords" content="tasarım, developer, portfolio, UI/UX, grafik tasarım">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">BA</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Mouse Glow -->
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">BA<span class="logo-dot">.</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active" data-section="hero">Ana Sayfa</a>
+                <a href="#about" class="nav-link" data-section="about">Hakkımda</a>
+                <a href="#experience" class="nav-link" data-section="experience">Tecrübe</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projeler</a>
+                <a href="#skills" class="nav-link" data-section="skills">Yetenekler</a>
+                <a href="#contact" class="nav-link" data-section="contact">İletişim</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-spline" aria-hidden="true">
+            <div class="hero-spline-glow"></div>
+            <spline-viewer url="https://prod.spline.design/DR1t1jSd8mqmfdGe/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-label" data-animate="fade-up">Yaratıcı Tasarımcı & Developer</div>
+            <h1 class="hero-title">
+                <span class="title-line" data-animate="fade-up" data-delay="0.2">Berat</span>
+                <span class="title-line accent" data-animate="fade-up" data-delay="0.4">Akıncı</span>
+            </h1>
+            <p class="hero-desc" data-animate="fade-up" data-delay="0.6">Dijital dünyada etkileyici ve yenilikçi
+                deneyimler tasarlıyorum.<br>Yaratıcılık ve teknolojiyi birleştirerek markaları geleceğe taşıyorum.</p>
+            <div class="hero-buttons" data-animate="fade-up" data-delay="0.8">
+                <a href="#projects" class="btn btn-primary"><span>Projelerimi İncele</span><svg width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg></a>
+                <a href="#contact" class="btn btn-outline"><span>İletişime Geç</span></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Aşağı Kaydır</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">01 / Hakkımda</span>
+                <h2 class="section-title">Ben Kimim<span class="accent">?</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text" data-animate="fade-right">
+                    <p class="about-lead">Merhaba! Ben Berat — dijital dünyada yaratıcılığı ve teknolojiyi harmanlayan
+                        bir tasarımcı ve geliştiriciyim.</p>
+                    <p>Yılların getirdiği deneyimle; web tasarımı, grafik tasarım, motion graphics ve frontend
+                        geliştirme alanlarında projeler üretiyorum. Her projede estetik ve işlevselliği bir arada
+                        sunmayı hedefliyorum.</p>
+                    <p>Adobe Photoshop, After Effects, CorelDRAW gibi güçlü araçlarla görsel dünyalar yaratırken, HTML
+                        ve CSS ile bu tasarımları hayata geçiriyorum.</p>
+                </div>
+                <div class="about-stats" data-animate="fade-left">
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="5">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Yıllık Deneyim</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Tamamlanan Proje</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="30">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Mutlu Müşteri</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">02 / Tecrübe</span>
+                <h2 class="section-title">İş Deneyimlerim<span class="accent">.</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">2023 — Günümüz</span>
+                        <h3 class="timeline-role">Senior UI/UX Tasarımcı</h3>
+                        <h4 class="timeline-company">Dijital Ajans</h4>
+                        <p class="timeline-desc">Büyük ölçekli web ve mobil projeler için kullanıcı deneyimi ve arayüz
+                            tasarımı. Marka stratejileri ve tasarım sistemleri oluşturma.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">2021 — 2023</span>
+                        <h3 class="timeline-role">Frontend Geliştirici</h3>
+                        <h4 class="timeline-company">Teknoloji Şirketi</h4>
+                        <p class="timeline-desc">Modern web teknolojileri ile interaktif ve performanslı arayüzler
+                            geliştirme. Responsive ve erişilebilir web çözümleri üretme.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">2019 — 2021</span>
+                        <h3 class="timeline-role">Grafik Tasarımcı</h3>
+                        <h4 class="timeline-company">Kreatif Stüdyo</h4>
+                        <p class="timeline-desc">Marka kimliği, baskı tasarımı ve dijital medya içerik üretimi. Sosyal
+                            medya kampanyaları ve video prodüksiyon desteği.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">03 / Projeler</span>
+                <h2 class="section-title">Seçili Çalışmalarım<span class="accent">.</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-animate="fade-up" data-tilt data-project="0">
+                    <div class="project-image" style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">UI/UX Tasarım</span>
+                        <h3 class="project-title">Nexus Platform</h3>
+                        <p class="project-short">E-ticaret platformu için kapsamlı kullanıcı deneyimi tasarımı</p>
+                        <button class="project-btn">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="project-card" data-animate="fade-up" data-tilt data-project="1">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #0a0a2e, #1a1a4e, #00f0ff20);"></div>
+                    <div class="project-overlay">
+                        <span class="project-category">Web Geliştirme</span>
+                        <h3 class="project-title">Aurora Dashboard</h3>
+                        <p class="project-short">Gerçek zamanlı veri görselleştirme panosu</p>
+                        <button class="project-btn">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="project-card" data-animate="fade-up" data-tilt data-project="2">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #1a002e, #4a0072, #7b2ff740);"></div>
+                    <div class="project-overlay">
+                        <span class="project-category">Marka Kimliği</span>
+                        <h3 class="project-title">Pulse Branding</h3>
+                        <p class="project-short">Teknoloji markası için komple kimlik tasarımı</p>
+                        <button class="project-btn">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="project-card" data-animate="fade-up" data-tilt data-project="3">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #002a1a, #004d3a, #00f0ff30);"></div>
+                    <div class="project-overlay">
+                        <span class="project-category">Motion Graphics</span>
+                        <h3 class="project-title">Vertex Motion</h3>
+                        <p class="project-short">Sinematik motion graphics ve video prodüksiyon</p>
+                        <button class="project-btn">Detayları Gör</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-image" id="modalImage"></div>
+            <div class="modal-body">
+                <span class="modal-category" id="modalCategory"></span>
+                <h3 class="modal-title" id="modalTitle"></h3>
+                <p class="modal-desc" id="modalDesc"></p>
+                <div class="modal-tech" id="modalTech"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">04 / Yetenekler</span>
+                <h2 class="section-title">Uzmanlık Alanlarım<span class="accent">.</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-animate="fade-up" data-tilt>
+                    <div class="skill-icon" style="background: #31a8ff;">
+                        <span>Ps</span>
+                    </div>
+                    <h3 class="skill-name">Adobe Photoshop</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                    <span class="skill-level">İleri Seviye</span>
+                </div>
+                <div class="skill-card" data-animate="fade-up" data-tilt>
+                    <div class="skill-icon" style="background: #7c6dff;">
+                        <span>Ae</span>
+                    </div>
+                    <h3 class="skill-name">Adobe After Effects</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                    <span class="skill-level">İleri Seviye</span>
+                </div>
+                <div class="skill-card" data-animate="fade-up" data-tilt>
+                    <div class="skill-icon" style="background: #49a942;">
+                        <span>Cd</span>
+                    </div>
+                    <h3 class="skill-name">CorelDRAW</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                    <span class="skill-level">İleri Seviye</span>
+                </div>
+                <div class="skill-card" data-animate="fade-up" data-tilt>
+                    <div class="skill-icon" style="background: #e44d26;">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <h3 class="skill-name">HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="92"></div>
+                    </div>
+                    <span class="skill-level">İleri Seviye</span>
+                </div>
+                <div class="skill-card" data-animate="fade-up" data-tilt>
+                    <div class="skill-icon" style="background: #264de4;">
+                        <span>{ }</span>
+                    </div>
+                    <h3 class="skill-name">CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                    <span class="skill-level">İleri Seviye</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">05 / İletişim</span>
+                <h2 class="section-title">Birlikte Çalışalım<span class="accent">.</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <p class="contact-lead">Projeniz için benimle iletişime geçin. Birlikte harika işler çıkarabiliriz.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <span>hello@beratakinci.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>İstanbul, Türkiye</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card" id="contactForm" data-animate="fade-left">
+                    <div class="form-group">
+                        <input type="text" id="formName" class="form-input" placeholder=" " required>
+                        <label for="formName" class="form-label">Adınız</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="formEmail" class="form-input" placeholder=" " required>
+                        <label for="formEmail" class="form-label">E-posta</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="formMessage" class="form-input form-textarea" placeholder=" " required
+                            rows="4"></textarea>
+                        <label for="formMessage" class="form-label">Mesajınız</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Mesaj Gönder</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13" />
+                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                        </svg>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <p>Mesajınız başarıyla gönderildi!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-logo">BA<span class="accent">.</span></span>
+                <p>&copy; 2025 Berat Akıncı. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.92/build/spline-viewer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

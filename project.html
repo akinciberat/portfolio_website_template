@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Detayı | Berat Akıncı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-hero { position: relative; min-height: 60vh; display: flex; align-items: flex-end; overflow: hidden; }
+        .project-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+        .project-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, var(--bg-primary) 10%, rgba(5,5,8,0.5) 50%, rgba(5,5,8,0.3)); }
+        .project-hero-content { position: relative; z-index: 2; padding: 60px 0; width: 100%; }
+        .project-hero .container { max-width: 900px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--accent-cyan); font-size: 14px; font-weight: 500; margin-bottom: 24px; transition: opacity .3s; }
+        .back-link:hover { opacity: 0.7; }
+        .back-link svg { width: 18px; height: 18px; }
+        .project-cat { font-size: 13px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--accent-cyan); margin-bottom: 12px; }
+        .project-h1 { font-family: var(--font-heading); font-size: clamp(36px,6vw,64px); font-weight: 700; color: var(--text-primary); line-height: 1.1; margin-bottom: 16px; }
+        .project-short-d { font-size: 20px; color: var(--text-secondary); max-width: 600px; }
+        .project-body { max-width: 900px; margin: 0 auto; padding: 80px 24px; }
+        .project-section { margin-bottom: 64px; }
+        .project-section h2 { font-family: var(--font-heading); font-size: 28px; color: var(--text-primary); margin-bottom: 20px; }
+        .project-section p { font-size: 17px; line-height: 1.9; margin-bottom: 16px; }
+        .project-tech-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+        .project-tech-list span { padding: 8px 20px; border-radius: 50px; font-size: 14px; font-weight: 600; background: rgba(0,240,255,0.06); border: 1px solid rgba(0,240,255,0.15); color: var(--accent-cyan); }
+        .project-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 24px; }
+        .project-gallery img { width: 100%; border-radius: 16px; border: 1px solid var(--glass-border); }
+        .project-link-btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; border-radius: 50px; background: var(--gradient-main); color: #000; font-weight: 600; font-size: 15px; transition: all .4s; }
+        .project-link-btn:hover { transform: translateY(-2px); box-shadow: 0 0 40px rgba(0,240,255,0.3); }
+        .pdf-container { width: 100%; height: 600px; border-radius: 16px; overflow: hidden; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); }
+        .pdf-container iframe { width: 100%; height: 100%; border: none; }
+        .pdf-container a { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; border-radius: 50px; background: var(--gradient-main); color: #000; font-weight: 600; font-size: 15px; transition: all .4s; text-decoration: none; }
+        .pdf-container a:hover { transform: translateY(-2px); box-shadow: 0 0 40px rgba(0,240,255,0.3); }
+        @media (max-width:768px) { .project-hero { min-height: 45vh; } .project-body { padding: 40px 24px; } }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">BA<span class="logo-dot">.</span></a>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Ana Sayfa</a>
+                <a href="/#projects" class="nav-link active">Projeler</a>
+                <a href="/#contact" class="nav-link">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero" id="projectHero">
+        <div class="project-hero-bg" id="heroBg"></div>
+        <div class="project-hero-overlay"></div>
+        <div class="project-hero-content">
+            <div class="container">
+                <a href="/" class="back-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    Geri Dön
+                </a>
+                <div class="project-cat" id="pCat"></div>
+                <h1 class="project-h1" id="pTitle"></h1>
+                <p class="project-short-d" id="pShort"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Body -->
+    <div class="project-body">
+        <div class="project-section">
+            <h2>Proje Hakkında</h2>
+            <div id="pContent"></div>
+        </div>
+
+        <div class="project-section" id="gallerySection" style="display:none;">
+            <h2>Görseller</h2>
+            <div class="project-gallery" id="pGallery"></div>
+        </div>
+
+        <div class="project-section">
+            <h2>Kullanılan Teknolojiler</h2>
+            <div class="project-tech-list" id="pTech"></div>
+        </div>
+
+        <div class="project-section" id="linkSection" style="display:none;">
+            <a href="#" class="project-link-btn" id="pLink" target="_blank">
+                <span>Projeyi Görüntüle</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+        </div>
+
+        <div class="project-section" id="pdfSection" style="display:none;">
+            <h2>Proje Dökümanı</h2>
+            <div class="pdf-container" id="pdfContainer"></div>
+        </div>
+    </div>
+
+    <footer class="footer"><div class="container"><div class="footer-content">
+        <span class="footer-logo">BA<span class="accent">.</span></span>
+        <p id="footerText">© 2025 Berat Akıncı. Tüm hakları saklıdır.</p>
+    </div></div></footer>
+
+    <script>
+    (async () => {
+        const params = new URLSearchParams(window.location.search);
+        const id = parseInt(params.get('id'));
+        try {
+            const res = await fetch('/api/data');
+            const data = await res.json();
+            const p = data.projects.items[id];
+            if (!p) { window.location.href = '/'; return; }
+
+            document.title = p.title + ' | Berat Akıncı';
+
+            // Hero background
+            const bg = document.getElementById('heroBg');
+            if (p.image) {
+                bg.style.backgroundImage = 'url(' + p.image + ')';
+            } else {
+                const colors = p.gradientColors || ['#0a0a2e','#1a1a4e','#003040'];
+                bg.style.background = 'linear-gradient(135deg, ' + colors.join(', ') + ')';
+            }
+
+            document.getElementById('pCat').textContent = p.category;
+            document.getElementById('pTitle').textContent = p.title;
+            document.getElementById('pShort').textContent = p.shortDesc;
+
+            // Detail content
+            const content = p.detailContent || p.description;
+            document.getElementById('pContent').innerHTML = content.split('\n').filter(s=>s.trim()).map(s => '<p>' + s + '</p>').join('');
+
+            // Tech
+            document.getElementById('pTech').innerHTML = (p.tech||[]).map(t => '<span>' + t + '</span>').join('');
+
+            // Gallery
+            const imgs = p.detailImages || [];
+            if (imgs.length > 0) {
+                document.getElementById('gallerySection').style.display = '';
+                document.getElementById('pGallery').innerHTML = imgs.map(src => '<img src="' + src + '" alt="' + p.title + '">').join('');
+            }
+
+            // Link
+            if (p.link) {
+                document.getElementById('linkSection').style.display = '';
+                document.getElementById('pLink').href = p.link;
+            }
+
+            // PDF
+            if (p.pdf) {
+                document.getElementById('pdfSection').style.display = '';
+                const pdfContainer = document.getElementById('pdfContainer');
+                pdfContainer.innerHTML = `<iframe src="${p.pdf}" type="application/pdf"></iframe>`;
+            }
+
+            // Footer
+            if (data.footer) document.getElementById('footerText').textContent = data.footer.text;
+        } catch(e) { console.error(e); }
+    })();
+    </script>
+</body>
+</html>
